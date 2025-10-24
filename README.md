@@ -1,16 +1,16 @@
-## 🛰️ **ft_irc**  
+# 🛰️ **ft_irc**  
 
 An IRC (Internet Relay Chat) server written in **C++98**, fully compliant with the **RFC 1459** specification.
 This project is part of the 42 curriculum and implements a minimal but functional IRC server supporting multiple clients simultaneously using **non-blocking I/O** **and poll()**.  
 
-## 📋 **Overview**  
+# 📋 **Overview**  
 
 ft_irc is a simple yet complete IRC server that can handle multiple clients connected via TCP/IP.
 It supports standard IRC commands and channel management according to RFC 1459.
 
 You can connect using any IRC client (e.g. **HexChat**) or directly with **netcat** for testing purposes.  
 
-## ⚙️ **Features**  
+# ⚙️ **Features**  
 
 - **Multi-client handling** using a single poll() loop (no forking, non-blocking I/O)
 - **TCP/IP (IPv4/IPv6)** communication
@@ -30,7 +30,7 @@ You can connect using any IRC client (e.g. **HexChat**) or directly with **netca
             - `o` — Give/take operator privilege
             - `l` — Set user limit
 
-## 🧠 **Technical Details**  
+# 🧠 **Technical Details**  
 
 - **Language**: C++98
 - **I/O Model**: Non-blocking sockets + single poll() call  
@@ -38,13 +38,25 @@ You can connect using any IRC client (e.g. **HexChat**) or directly with **netca
 - **No forking or multithreading allowed**  
 - **Compatible Clients**: Tested with HexChat
 
-## 🚀 How to Run  
+# 🚀 How to Run  
 
-# 1️⃣ Compile  
+## 1️⃣ Compile  
 
 ``` bash
 make
 ```
 
+## 2️⃣ Run the server  
 
+``` bash
+./ircserv <port> <password>
+```
+
+Example:  
+
+``` bash
+./ircserv 6667 mypassword
+```
+
+# 💬 Connect to the Server  
 
