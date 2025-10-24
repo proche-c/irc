@@ -38,15 +38,15 @@ You can connect using any IRC client (e.g. **HexChat**) or directly with **netca
 - **No forking or multithreading allowed**  
 - **Compatible Clients**: Tested with HexChat
 
-# 🚀 How to Run  
+# 🚀 **How to Run**  
 
-## 1️⃣ Compile  
+## 1️⃣ **Compile**  
 
 ``` bash
 make
 ```
 
-## 2️⃣ Run the server  
+## 2️⃣ **Run the server**  
 
 ``` bash
 ./ircserv <port> <password>
@@ -58,5 +58,28 @@ Example:
 ./ircserv 6667 mypassword
 ```
 
-# 💬 Connect to the Server  
+# 💬 **Connect to the Server**  
 
+## **Using HexChat**  
+
+1. Open HexChat → “Network List”
+2. Add a new network, for example ft_irc
+3. Set the server to localhost/127.0.0.1 with the correct <port>
+4. Under “Server password”, enter <password>
+5. Connect and enjoy!
+
+## **Using netcat (for manual testing)**  
+
+``` bash  
+nc localhost 6667
+```
+
+Then follow RFC 1459 syntax manually, for example:  
+
+``` bash
+PASS mypassword
+NICK mynick
+USER myuser 0 * :My Real Name
+JOIN #general
+PRIVMSG #general :Hello everyone!
+```
