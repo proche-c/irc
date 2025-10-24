@@ -18,23 +18,33 @@ You can connect using any IRC client (e.g. **HexChat**) or directly with **netca
 - **Channels** with message broadcasting
 - **Channel operators and modes**
 - Implements the following **IRC commands**:
-    - `PASS`, NICK, USER, JOIN, PART, PRIVMSG, QUIT
+    - `PASS`, `NICK`, `USER`, `JOIN`, `PART`, `PRIVMSG`
     - Operator commands:
-        - KICK — Remove a client from a channel
-        - INVITE — Invite a client to join a channel
-        - TOPIC — View or change the channel topic
-        - MODE — Set or remove channel modes:
-            - i — Invite-only channel
-            - t — Restrict topic changes to channel operators
-            - k — Channel key (password)
-            - o — Give/take operator privilege
-            - l — Set user limit
+        - `KICK` — Remove a client from a channel
+        - `INVITE` — Invite a client to join a channel
+        - `TOPIC` — View or change the channel topic
+        - `MODE` — Set or remove channel modes:
+            - `i` — Invite-only channel
+            - `t` — Restrict topic changes to channel operators
+            - `k` — Channel key (password)
+            - `o` — Give/take operator privilege
+            - `l` — Set user limit
 
 ## 🧠 **Technical Details**  
 
-- Language: C++98
-- I/O Model: Non-blocking sockets + single poll() call
-- Dependencies: None (standard C/C++ and system calls only)
-- No forking or multithreading allowed
+- **Language**: C++98
+- **I/O Model**: Non-blocking sockets + single poll() call  
+- **Dependencies**: None (standard C/C++ and system calls only)  
+- **No forking or multithreading allowed**  
+- **Compatible Clients**: Tested with HexChat
+
+## 🚀 How to Run  
+
+# 1️⃣ Compile  
+
+``` bash
+make
+```
+
 
 
