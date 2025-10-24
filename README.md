@@ -18,7 +18,7 @@ You can connect using any IRC client (e.g. **HexChat**) or directly with **netca
 - **Channels** with message broadcasting
 - **Channel operators and modes**
 - Implements the following **IRC commands**:
-    - 'PASS', NICK, USER, JOIN, PART, PRIVMSG, QUIT
+    - `PASS`, NICK, USER, JOIN, PART, PRIVMSG, QUIT
     - Operator commands:
         - KICK — Remove a client from a channel
         - INVITE — Invite a client to join a channel
